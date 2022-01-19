@@ -12,50 +12,50 @@ Object.defineProperty(exports, "FoodModel", {
 Object.defineProperty(exports, "ImageModel", {
   enumerable: true,
   get: function get() {
-    return _Image.ImageModel;
+    return _image.ImageModel;
   }
 });
 Object.defineProperty(exports, "MenuModel", {
   enumerable: true,
   get: function get() {
-    return _Menu.MenuModel;
+    return _menu.MenuModel;
   }
 });
 Object.defineProperty(exports, "OrderModel", {
   enumerable: true,
   get: function get() {
-    return _Order.OrderModel;
+    return _order.OrderModel;
   }
 });
 Object.defineProperty(exports, "RestaurantModel", {
   enumerable: true,
   get: function get() {
-    return _Restaurant.RestaurantModel;
+    return _restaurant.RestaurantModel;
   }
 });
 Object.defineProperty(exports, "ReviewModel", {
   enumerable: true,
   get: function get() {
-    return _Review.ReviewModel;
+    return _review.ReviewModel;
   }
 });
 Object.defineProperty(exports, "UserModel", {
   enumerable: true,
   get: function get() {
-    return _User.UserModel;
+    return _user.UserModel;
   }
 });
 
 var _food = require("./food");
 
-var _Image = require("./Image");
+var _image = require("./image");
 
-var _Menu = require("./Menu");
+var _menu = require("./menu");
 
-var _Order = require("./Order");
+var _order = require("./order");
 
-var _Restaurant = require("./Restaurant");
+var _restaurant = require("./restaurant");
 
-var _Review = require("./Review");
+var _review = require("./review");
 
-var _User = require("./User");
+var _user = require("./user");
