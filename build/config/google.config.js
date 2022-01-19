@@ -85,9 +85,6 @@ var _default = function _default(passport) {
               done(_context.t0, null);
 
             case 20:
-              ;
-
-            case 21:
             case "end":
               return _context.stop();
           }

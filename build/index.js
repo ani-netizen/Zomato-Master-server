@@ -47,7 +47,8 @@ zomato.use("/image", _Image["default"]);
 zomato.use("/order", _Order["default"]);
 zomato.use("/review", _Review["default"]);
 zomato.use("/user", _User["default"]);
-zomato.listen(process.env.PORT || 4000, function () {
+var PORT = process.env.PORT || "4000";
+zomato.listen(PORT, function () {
   (0, _connection["default"])().then(function () {
     console.log("MY EXPRESS APP IS RUNNING...");
   })["catch"](function (error) {

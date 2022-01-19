@@ -17,11 +17,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var Router = _express["default"].Router();
 /*
-Route		|	/list/:_id
-Description	|	Get all the Menus based on restaurants
-Access		|	Public
-Parameter	|	_id
-Methods		|	GET
+Route		      | 	/list/:_id
+Description	  | 	Get all the Menus based on restaurants
+Access		    | 	Public
+Parameter	    | 	_id
+Methods		    | 	GET
 */
 
 
@@ -75,11 +75,11 @@ Router.get("/list/:_id", /*#__PURE__*/function () {
   };
 }());
 /*
-Route		|	/image/:_id
-Description	|	Get all the menu images based on restaurants
-Access		|	Public
-Parameter	|	id
-Methods		|	GET
+Route		      | 	/image/:_id
+Description	  | 	Get all the menu images based on restaurants
+Access	    	| 	Public
+Parameter	    | 	id
+Methods		    | 	GET
 */
 
 Router.get("/image/:_id", /*#__PURE__*/function () {

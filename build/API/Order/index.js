@@ -21,11 +21,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var Router = _express["default"].Router();
 /*
-Route		|	/:_id
-Description	|	Get all the Orders based on id
-Access		|	Private
-Parameter	|	id
-Methods		|	GET
+Route		      | 	/:_id
+Description	  | 	Get all the Orders based on id
+Access		    | 	Private
+Parameter	    | 	id
+Methods		    | 	GET
 */
 
 
@@ -85,11 +85,11 @@ Router.get("/:_id", _passport["default"].authenticate("jwt"), /*#__PURE__*/funct
   };
 }());
 /*
-Route		|	/new/:_id
-Description	|	Add new order
-Access		|	Private
-Parameter	|	id
-Methods		|	POST
+Route		      | 	/new/:_id
+Description	  | 	Add new order
+Access		    | 	Private
+Parameter	    | 	id
+Methods		    | 	POST
 */
 
 Router.post("/new/:_id", _passport["default"].authenticate("jwt"), /*#__PURE__*/function () {

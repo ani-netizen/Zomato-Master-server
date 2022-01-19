@@ -27,11 +27,11 @@ var upload = (0, _multer["default"])({
   storage: storage
 });
 /*
-Route		    | 	/
-Description |	  Uploads given images to s3 bucket and saves file link to mongodb
-Access	    | 	Public
-Parameter  	|	  --
-Methods	    | 	POST
+Route		      | 	/
+Description   |	  Uploads given images to s3 bucket and saves file link to mongodb
+Access	      | 	Public
+Parameter  	  |	  --
+Methods	      | 	POST
 */
 
 Router.post("/", upload.single("file"), /*#__PURE__*/function () {

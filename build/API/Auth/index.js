@@ -21,11 +21,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var Router = _express["default"].Router();
 /*
-Route		|	/signup
-Description	|	Register new user
-Access		|	Public
-Parameter	|	--
-Methods		|	POST
+Route	      	| 	/signup
+Description	  | 	Register new user
+Access	    	| 	Public
+Parameter   	| 	--
+Methods	    	| 	POST
 */
 
 
@@ -76,11 +76,11 @@ Router.post("/sign-up", /*#__PURE__*/function () {
   };
 }());
 /*
-Route		|	/signin
-Description	|	Sign in as existing user
-Access		|	Public
-Parameter	|	--
-Methods		|	POST
+Route	      	| 	/signin
+Description 	| 	Sign in as existing user
+Access	    	| 	Public
+Parameter   	| 	--
+Methods	    	| 	POST
 */
 
 Router.post("/sign-in", /*#__PURE__*/function () {
@@ -126,22 +126,22 @@ Router.post("/sign-in", /*#__PURE__*/function () {
   };
 }());
 /*
-Route		|	/google
-Description	|	Sign in using google
-Access		|	Public
-Parameter	|	--
-Methods		|	GET
+Route	      	| 	/google
+Description	  |	  Sign in using google
+Access	    	| 	Public
+Parameter   	| 	--
+Methods		    | 	GET
 */
 
 Router.get("/google", _passport["default"].authenticate("google", {
   scope: ["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"]
 }));
 /*
-Route		|	/google/callback
-Description	|	Google sign in callback 
-Access		|	Public
-Parameter	|	--
-Methods		|	GET
+Route		      | 	/google/callback
+Description 	|	  Google sign in callback 
+Access    		|	  Public
+Parameter	    | 	--
+Methods		    |	  GET
 */
 
 Router.get("/google/callback", _passport["default"].authenticate("google", {
