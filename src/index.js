@@ -36,7 +36,9 @@ zomato.use("/order", Order);
 zomato.use("/review", Review);
 zomato.use("/user", User);
 
-zomato.listen(process.env.PORT || 4000, () => {
+const PORT = process.env.PORT || 4000;
+
+zomato.listen(PORT, () => {
   connectDB()
     .then(() => {
       console.log("MY EXPRESS APP IS RUNNING...");
