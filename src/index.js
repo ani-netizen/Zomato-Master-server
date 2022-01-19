@@ -36,7 +36,7 @@ zomato.use("/order", Order);
 zomato.use("/review", Review);
 zomato.use("/user", User);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || "4000";
 
 zomato.listen(PORT, () => {
   connectDB()
