@@ -147,7 +147,7 @@ Methods		    |	  GET
 Router.get("/google/callback", _passport["default"].authenticate("google", {
   failureRedirect: "/"
 }), function (req, res) {
-  return res.redirect("http://localhost:3000/google/".concat(req.session.passport.user.token));
+  return res.redirect("https://zomato-master.netlify.app/google/".concat(req.session.passport.user.token));
 });
 var _default = Router;
 exports["default"] = _default;
