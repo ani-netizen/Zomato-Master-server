@@ -27,7 +27,7 @@ var _default = function _default(passport) {
   passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:4000/auth/google/callback"
+    callbackURL: "https://zomato-master-server.herokuapp.com/auth/google/callback"
   }, /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(accessToken, refreshToken, profile, done) {
       var newUser, user, token, _user, _token;
@@ -85,6 +85,9 @@ var _default = function _default(passport) {
               done(_context.t0, null);
 
             case 20:
+              ;
+
+            case 21:
             case "end":
               return _context.stop();
           }
